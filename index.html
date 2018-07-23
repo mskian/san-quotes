@@ -21,35 +21,15 @@
 </head>
 <body>
 
-    <h1>Quotes</h1>
-    <ul id="sanquotes"></ul>
+    <script>
+    fetch('https://quotes.santhoshveer.com/quoteswritten.json')
+    .then(response => response.json())
+    .then(data => {
+      // Here's a list of repos!
+      console.log(data)
+    });
+  </script>
 
-<script>
-      function createNode(element) {
-      return document.createElement(element);
-  }
-  function append(parent, el) {
-    return parent.appendChild(el);
-  }
-  const ul = document.getElementById('sanquotes');
-  const url = 'https://quotes.santhoshveer.com/quoteswritten.json';
-  fetch(url)
-  .then((resp) => resp.json())
-  .then(function(data) {
-    let sanquotes = data.quoteswritten;
-    return sanquotes.map(function(quotesdata) {
-      let li = createNode('li'),
-          span = createNode('span');
-      var random = quotesdata.data.quoteswritten[Math.floor(Math.random() * quotesdata.data.quoteswritten.length)];
-      span.innerHTML = `${random.quotes}`;
-      append(li, span);
-      append(ul, li);
-    })
-  })
-  .catch(function(error) {
-    console.log(error);
-  });   
-</script>
 
 
 <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
