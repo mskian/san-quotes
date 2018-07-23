@@ -1,7 +1,9 @@
 
 <p id="san-quotes"></p>
-<script type="text/javascript" src="quoteswritten.json"></script>
 <script>
+    $.getJSON("quoteswritten.json", function(json) {
+    console.log(json); // this will show the info it in firebug console
+});
 var quotesContent = quoteswritten.json;
 var random = quotesContent.quoteswritten[Math.floor(Math.random() * quotesContent.quoteswritten.length)];
 document.getElementById("san-quotes").innerHTML = random.quotes;
