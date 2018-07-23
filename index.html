@@ -40,8 +40,8 @@
     return sanquotes.map(function(quotesdata) {
       let li = createNode('li'),
           span = createNode('span');
-      var random = quotesdata.quotes[Math.floor(Math.random() * quotesdata.quotes.length)];
-      span.innerHTML = `${random}`;
+      var random = quotesdata.sanquotes[Math.floor(Math.random() * quotesdata.sanquotes.length)];
+      span.innerHTML = `${random.quotes}`;
       append(li, span);
       append(ul, li);
     })
