@@ -1,2 +1,4 @@
-# san-quotes
-My Quotes Collections
+# San Quotes
+
+My Favourite and Latest Collections of Quotes and Sayings - Santhosh Veer
+
