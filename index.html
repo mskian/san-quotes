@@ -1,1 +1,32 @@
 <h1>Hello World</h2>
+
+    <h1>Quotes</h1>
+    <ul id="sanquotes"></ul>
+
+<script>
+      function createNode(element) {
+      return document.createElement(element);
+  }
+
+  function append(parent, el) {
+    return parent.appendChild(el);
+  }
+
+  const ul = document.getElementById('sanquotes');
+  const url = 'https://quotes.santhoshveer.com/quoteswritten.json';
+  fetch(url)
+  .then((resp) => resp.json())
+  .then(function(data) {
+    let sanquotes = data.quoteswritten;
+    return sanquotes.map(function(quotesdata) {
+      let li = createNode('li'),
+          span = createNode('span');
+      span.innerHTML = `${quotesdata.quoteswritten.quotes}`;
+      append(li, span);
+      append(ul, li);
+    })
+  })
+  .catch(function(error) {
+    console.log(error);
+  });   
+</script>
