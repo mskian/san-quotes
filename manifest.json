@@ -16,6 +16,6 @@
 	"theme_color": "#F97F51",
 	"display": "standalone",
 	"orientation": "any",
-	"start_url": ".\/?utm_source=tospwa&utm_medium=pwa&utm_campaign=pwapp",
+	"start_url": ".\/?utm_source=sanqtpwa&utm_medium=pwa&utm_campaign=pwapp",
 	"scope": "\/"
 }
