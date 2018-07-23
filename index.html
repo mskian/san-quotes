@@ -1,1 +1,8 @@
-<h1>Hello World</h2>
+
+<p id="san-quotes"></p>
+
+<script>
+var quotesContent = require('./quoteswritten.json');
+var random = quotesContent.quoteswritten[Math.floor(Math.random() * quotesContent.quoteswritten.length)];
+document.getElementById("san-quotes").innerHTML = random.quotes;
+</script>
