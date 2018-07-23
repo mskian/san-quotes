@@ -1,0 +1,21 @@
+{
+	"name": "San Quotes",
+    "short_name": "San Quotes",
+    "lang": "en",
+	"description": "My Favourite Quotes and Sayings Collections - Santhosh Veer.",
+	"icons": [{
+		"src": "https:\/\/status.tamilsms.blog\/content\/images\/2018\/07\/splicon.png",
+		"sizes": "192x192",
+		"type": "image\/png"
+	}, {
+		"src": "https:\/\/status.tamilsms.blog\/content\/images\/2018\/07\/splashicon.png",
+		"sizes": "512x512",
+		"type": "image\/png"
+	}],
+	"background_color": "#ddbd8b",
+	"theme_color": "#F97F51",
+	"display": "standalone",
+	"orientation": "any",
+	"start_url": ".\/?utm_source=tospwa&utm_medium=pwa&utm_campaign=pwapp",
+	"scope": "\/"
+}
