@@ -28,6 +28,9 @@
       // Here's a list of repos!
       console.log(data)
     });
+    var quotesContent = data;
+    var random = quotesContent.quoteswritten[Math.floor(Math.random() * quotesContent.quoteswritten.length)];
+    document.body.innerHTML = random;
   </script>
 
 
