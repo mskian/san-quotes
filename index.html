@@ -129,6 +129,9 @@ box-shadow: 4px 4px 10px #e3e3e3;
 <div class="col-lg-8 col-lg-offset-2 text-center mx-auto">
 <br />
 <blockquote><div id="quotesdata"></div></blockquote>
+<br />
+<br />
+<button type="button" id="livescore" class="btn btn-success">Get Another Random Quote</button>
 </div>
 </div>
 </div>
@@ -151,6 +154,13 @@ box-shadow: 4px 4px 10px #e3e3e3;
   });
   </script>
 
+<script>
+    $(document).ready(function() {
+        $('#livescore').click(function() {
+            location.reload();
+        });
+    });     
+</script>
 
 </body>
 </html>
