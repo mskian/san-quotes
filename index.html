@@ -21,16 +21,20 @@
 </head>
 <body>
 
+    <div id="quotesdata"></div>
+
     <script>
     fetch('https://quotes.santhoshveer.com/quoteswritten.json')
     .then(response => response.json())
     .then(data => {
-      // Here's a list of repos!
+
       console.log(data)
 
     var quotesContent = data;
     var random = quotesContent.quoteswritten[Math.floor(Math.random() * quotesContent.quoteswritten.length)];
-    document.body.innerHTML = random.quotes;
+    const quotesdata = document.getElementById('sanquotes');
+    //document.body.innerHTML = random.quotes;
+    document.getElementById("quotesdata").innerHTML = random.quotes;
   });
   </script>
 
