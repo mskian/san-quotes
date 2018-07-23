@@ -1,8 +1,8 @@
 
 <p id="san-quotes"></p>
-
+<script type="text/javascript" src="quoteswritten.json"></script>
 <script>
-var quotesContent = quoteswritten.json
+var quotesContent = quoteswritten;
 var random = quotesContent.quoteswritten[Math.floor(Math.random() * quotesContent.quoteswritten.length)];
 document.getElementById("san-quotes").innerHTML = random.quotes;
 </script>
