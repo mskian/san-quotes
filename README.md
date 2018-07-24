@@ -13,5 +13,5 @@ My Favourite and Latest Collections of Quotes and Sayings - Santhosh Veer
 - Static HTML Site
 - Bootstrap4
 - OneSignal Push Notification
-- Progressive web app
+- Progressive Web App
 - JSON API
