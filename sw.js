@@ -8,7 +8,7 @@
  
 const cacheName = 'quotes.santhoshveer.com-superpwa';
 const startPage = 'https://quotes.santhoshveer.com';
-const offlinePage = 'https://quotes.santhoshveer.com';
+const offlinePage = 'https://quotes.santhoshveer.com/offline.html';
 const fallbackImage = 'https://quotes.santhoshveer.com/content/images/splicon.png';
 const filesToCache = [startPage, offlinePage, fallbackImage];
 const neverCacheUrls = [/\/ghost/];
