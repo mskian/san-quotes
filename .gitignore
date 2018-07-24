@@ -2,6 +2,7 @@
 post.js
 package.json
 package-lock.json
+random.html
 
 # Dependency directory
 node_modules
