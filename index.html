@@ -192,7 +192,7 @@ box-shadow: 4px 4px 10px #e3e3e3;
 <script>
     if ('serviceWorker' in navigator) {
       window.addEventListener('load', function() {
-        navigator.serviceWorker.register('/sw.js')
+        navigator.serviceWorker.register('/OneSignalSDKWorker.js')
         .then(function(registration) { console.log('SuperPWA service worker ready'); registration.update(); })
         .catch(function(error) { console.log('Registration failed with ' + error); });
         window.addEventListener('beforeinstallprompt', (e) => { e.prompt(); });
