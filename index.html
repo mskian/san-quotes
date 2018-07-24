@@ -99,17 +99,48 @@ a {
     overflow-wrap: break-word;
     word-wrap: break-word;
  }
-blockquote {
-background: #B9DFF1;
-margin: 0px 50px 0px 50px;
-padding: 30px 30px 30px 50px;
-color:#333;
-border-radius:15px;
-font-size: 18px;
-font-family: 'Ubuntu', sans-serif;
-line-height: 1.6em;
-box-shadow: 4px 4px 10px #e3e3e3;
-word-wrap: break-word;
+ .callout-blockquote {
+	background: #FFD6D6;
+	border: 1px solid #FFAEAE;
+    border-radius: 10px;
+    color: #131313;
+	text-align: justify;
+	max-width: 500px;
+    width: 100%;
+    padding: 40px 30px 30px;
+    margin: 0;
+    position: relative;
+	box-shadow: 5px -5px 8px -1px rgba(199, 199, 199, 0.6);
+}
+
+blockquote:before {
+	font-family: 'icomoon';
+    content: "\e900";
+    color: #FF4242;
+	line-height: 40px;
+	top: -20px;
+    left: 20px;
+    text-shadow: 7px 5px 10px rgba(0, 0, 0, 0.26);
+}
+blockquote:after {
+	content: "";
+	border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 20px solid #FF6C6C;
+    width: 0;
+    height: 0;
+    position: absolute;
+    bottom: -20px;
+}
+blockquote div {
+	color: #868686;
+	font-style: italic;
+    font-size: 95%;
+	text-align: right;
+	position: absolute;
+	bottom: -50px;
+	right: 0;
+	margin-top: 15px;
 }
 .footer {
     margin-top: 2.6em;
