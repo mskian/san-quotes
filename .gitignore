@@ -1,8 +1,9 @@
-# admin
+# admin and Other assets
 post.js
 package.json
 package-lock.json
 random.html
+sw-1.0.js
 
 # Dependency directory
 node_modules
