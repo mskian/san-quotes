@@ -11,8 +11,7 @@ const quotesdata = document.getElementById('sanquotes');
 document.getElementById("quotesdata").innerHTML = random.quotes;
 });
 
-$(document).ready(function() {
-    $('#livescore').click(function() {
-        location.reload();
-    });
-}); 
+$("#livescore").click(function() {
+    //alert('clicked')
+    $("#quotesdata").load(" #quotesdata > *");
+  }); 
