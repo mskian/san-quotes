@@ -4,13 +4,16 @@ fetch('https://quotes.santhoshveer.com/quoteswritten.json')
 
 console.log(data)
 
-$("#livescore").on("click", function(t) {
-t.preventDefault()
 var quotesContent = data;
 var random = quotesContent.quoteswritten[Math.floor(Math.random() * quotesContent.quoteswritten.length)];
-document.getElementById("quotesdata").innerHTML = random.quotes;
-var quotesdata = document.getElementById('sanquotes');
+const quotesdata = document.getElementById('sanquotes');
 //document.body.innerHTML = random.quotes;
+document.getElementById("quotesdata").innerHTML = random.quotes;
+});
 
-   });
-}); 
+$(function() {
+    $("#livescore").click(function(evt) {
+       $("#quotesdata").load("index.html")
+       evt.preventDefault();
+    })
+  })
