@@ -3,7 +3,7 @@ post.js
 package.json
 package-lock.json
 assets/js/backup.js
-assets/js/sw-1.0.js
+assets/js/swbk.js
 
 # Dependency directory
 node_modules
