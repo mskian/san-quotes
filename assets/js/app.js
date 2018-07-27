@@ -13,7 +13,7 @@ document.getElementById("quotesdata").innerHTML = random.quotes;
 
 $(function() {
     $("#livescore").click(function(evt) {
-        $("#randomdiv").load("#quotesdata")
+        $("#quotesdata").load("#quotesdata")
        evt.preventDefault();
     })
   })
