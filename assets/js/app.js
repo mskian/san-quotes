@@ -23,7 +23,7 @@ console.log(data)
 function genQuote() {
 var quotesContent = data;
 var random = quotesContent.quoteswritten[Math.floor(Math.random() * quotesContent.quoteswritten.length)];
-//const quotesdata = document.getElementById("sanquotes");
+const quotesdata = document.getElementById("sanquotes");
 document.getElementById("quotesdata").innerHTML = random.quotes;
 }
 
