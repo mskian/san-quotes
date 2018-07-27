@@ -2,12 +2,12 @@
 post.js
 package.json
 package-lock.json
-random.html
-sw-1.0.js
 assets/js/backup.js
+assets/js/sw-1.0.js
 
 # Dependency directory
 node_modules
+server
 
 # Optional npm cache directory
 .npm
