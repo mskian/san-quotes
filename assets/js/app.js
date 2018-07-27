@@ -1,3 +1,5 @@
+'use strict';
+
 fetch('https://quotes.santhoshveer.com/quoteswritten.json')
 .then(response => response.json())
 .then(data => {
