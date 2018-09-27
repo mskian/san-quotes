@@ -16,3 +16,5 @@ Allow: /
 
 User-agent: HTTrack
 Disallow: /
+
+Sitemap: https://quotes.santhoshveer.com/sitemap.xml
