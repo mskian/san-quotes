@@ -207,6 +207,15 @@ header {
     font-weight: bold;
     font-variant: small-caps;
 }
+.spinner-wrapper {
+position: fixed;
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+background-color: #ff6347;
+z-index: 999999;
+}
 </style>
 
 <link rel="manifest" href="/manifest.json">
@@ -237,6 +246,10 @@ header {
 
 </head>
 <body>
+<!--CSS Spinner-->
+<div class="spinner-wrapper">
+<div class="spinner"></div>
+</div>
 <header class="text-white">
 <div class="container text-center">
 <h1>{ San Quotes }</h1>
@@ -296,6 +309,20 @@ header {
 <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 <script src="assets/js/app.js"></script>
+
+<script>
+        $(document).ready(function() {
+        //Preloader
+        $(window).on("load", function() {
+        preloaderFadeOutTime = 500;
+        function hidePreloader() {
+        var preloader = $('.spinner-wrapper');
+        preloader.fadeOut(preloaderFadeOutTime);
+        }
+        hidePreloader();
+        });
+        });
+        </script>
 
 <script>
 if ('serviceWorker' in navigator) {
