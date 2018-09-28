@@ -15,7 +15,7 @@
     <link rel="shortcut icon" href="/favicon.png" type="image/png" />
     <link rel="canonical" href="https://quotes.santhoshveer.com/offline" />
  
-<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
 
  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -26,7 +26,7 @@
     <![endif]-->
 
 <style>
-  body {
+    body {
     background-color: #ffffff;
     font-family: 'Ubuntu', sans-serif;
     font-size: 18px;
@@ -55,7 +55,7 @@ a, a:visited{color:#4a59df; text-decoration:none}
 a:hover{color:#4a59df; text-decoration:underline}
 a:focus, a:hover, a:active{outline:none}
 .btn {
-    border-radius:9999px
+    border-radius: 24px;
 }
 .btn-default-outline{
     background-color:transparent;
@@ -74,7 +74,14 @@ a:focus, a:hover, a:active{outline:none}
         font-weight: 700;
         font-size:14px;
         color: #fff;
+        text-transform: uppercase;
+        letter-spacing: 1px;
     }
+.btn-rand{
+    background-color: #87D37C;
+    box-shadow: 0 3px 0 0 #26A65B;
+    color: #ffffff;
+}
 p {
     line-height: 1.5;
     font-weight: 400;
@@ -102,26 +109,78 @@ word-wrap: break-word;
 line-height: 1.6em;
 box-shadow: 4px 4px 10px #e3e3e3;
 }
-.footer {
+.post-content {
+    font-weight: bold;
+    font-variant: small-caps;
+}
+.app-credit p {
+    line-height: 1.5;
+    font-size: 16px;
+    font-family: 'Ubuntu', sans-serif;
+    word-wrap: break-word;
+    letter-spacing: 0;
+    color: #221f1f;
+}
+.ft-img {
+    float: left;
+    bottom:40px;
+}
+.home-section {
+    margin:1% auto 0;
+}
+.web-credits {
     margin-top: 2.6em;
     padding: 20px 0 26px
 }
-.footer-text p {
+.web-credits p {
     font-size: 16px;
     font-family: 'Ubuntu', sans-serif;
+    word-wrap: break-word;
     text-align: center;
     font-weight: 400;
-    word-wrap: break-word;
+    font-variant: small-caps;
+    font-weight: bold;
     color: #36383f
+}
+.msg-box {
+border: 2px solid rgb(255, 204, 0);
+padding: 15px 20px;
+color: black;
+background-color: rgb(255, 255, 153);
+border-radius:20px 20px 0 20px;
+font-size: 16px;
+} 
+.msg-box a {
+    color: #000000;
+    border-bottom: 1px dotted;
+}
+header {
+  background-color: #f1c40f;
+  padding: 70px 0 80px;
+}
+@media (min-width: 992px) {
+  header {
+    padding: 70px 0 80px;
+  }
+}
+.home-cnt {
+    color: #ffffff;
+    word-wrap: break-word;
+    font-weight: bold;
+    font-variant: small-caps;
 }
 </style>
 
 <link rel="manifest" href="/manifest.json">
 
-<link rel='dns-prefetch' href='//quotes.santhoshveer.com' />
-<link rel='dns-prefetch' href='//code.jquery.com' />
-<link rel='dns-prefetch' href='//stackpath.bootstrapcdn.com' />
-<link rel='dns-prefetch' href='//cdn.onesignal.com' />
+<link rel="dns-prefetch" href="//quotes.santhoshveer.com">
+<link rel="dns-prefetch" href="//code.jquery.com">
+<link rel="dns-prefetch" href="//stackpath.bootstrapcdn.com">
+<link rel="dns-prefetch" href="//cdn.onesignal.com">
+<link rel="dns-prefetch" href="//fonts.googleapis.com">
+
+<link href="//stackpath.bootstrapcdn.com" rel="preconnect" crossorigin>
+<link href="//fonts.googleapis.com" rel="preconnect" crossorigin>
 
 <script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async=""></script>
 <script>
@@ -139,43 +198,45 @@ box-shadow: 4px 4px 10px #e3e3e3;
 
 </head>
 <body>
-<nav class="navbar navbar-expand-lg navbar-dark">
-<a class="navbar-brand" href="/">
-<img src="/content/images/sanquotes-logov1.png" width="32" height="32" alt="San Quotes"/>                   
-</a>
-<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-<span class="navbar-toggler-icon"></span>
-</button>
-<div class="collapse navbar-collapse" id="navbarText">
-<ul class="navbar-nav ml-auto">
-<li class="nav-item active"><a class="nav-link" href="/">🎪 Home</a></li>
-<li class="nav-item active"><a class="nav-link" href="https://github.com/mskian/san-quotes" target="_blank" rel="noopener">📦 Github</a></li>
-</ul>
+<header class="text-white">
+<div class="container text-center">
+<h1>{ San Quotes }</h1>
+<p class="home-cnt"><strong>> You are the creator of your own destiny 💯</strong></p>
 </div>
-</nav>
+</header>
 <br />
 <br />
 
 <div class="container">
 <div class="row">
 <div class="col-lg-8 col-md-10 mx-auto">
-<p>Woops..! its Looks Like You are Currently offline. Please Try again as soon as your Network Connection is Available again.</p>
+<p class="msg-box"><i>Woops..! its Looks Like You are Currently offline. Please Try again as soon as your Network Connection is Available again.</i></p>
 </div>
 </div>
 </div>
 <br />
 
-<footer>
-<div class="footer">
-<div class="footer-text">
-<p>Hosted on Github Pages.Developed by <a href="https://twitter.com/santhoshveerece" target="_blank" rel="noopener">@Santhoshveer</a></p>
+<div class="container">
+<div class="row">
+<div class="col-lg-8 col-md-10 mx-auto">
+<p class="msg-box">
+✔ <b>Node CLI</b> 👇 <br>
+<code>$ npm install -g sanquotes</code><br>
+<code>$ sanquotes</code><br>
+<br />
+➡ Hosted on - <b>Github Pages</b> 🚀<br>
+➡ Build using <b>Bootstrap 4</b> 📦<br>
+🤓 Developed by <a href="https://twitter.com/santhoshveerece" target="_blank" rel="noopener"><b>@Santhosh Veer</b></a>
+</p>
 </div>
 </div>
-</footer>
+</div>
+<br />
+<br />
 
 
 <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 
 <script>
     if ('serviceWorker' in navigator) {
