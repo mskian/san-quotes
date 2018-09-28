@@ -133,20 +133,6 @@ a {
     overflow-wrap: break-word;
     word-wrap: break-word;
  }
-blockquote {
-background: #B9DFF1;
-margin: 0px 50px 0px 50px;
-padding: 30px 30px 30px 50px;
-color:#333;
-border-radius:15px;
-font-size: 18px;
-font-family: Georgia, "Times New Roman", serif;
-font-style: italic;
-font-weight: bold;
-word-wrap: break-word;
-line-height: 1.6em;
-box-shadow: 4px 4px 10px #e3e3e3;
-}
 .post-content {
     font-weight: bold;
     font-variant: small-caps;
@@ -262,7 +248,17 @@ header {
 <div class="row">
 <div class="col-lg-8 col-md-10 mx-auto">
 <br />
-<div class="well"><div id="quotesdata"></div></div>
+<div class="card">
+    <div class="card-header">
+    Quotes
+    </div>
+    <div class="card-body">
+    <blockquote class="blockquote mb-0">
+    <div id="quotesdata"></div>
+    <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
+    </blockquote>
+    </div>
+    </div>
 <br />
 <div class="text-center">
 <button type="button" id="generateQuotes" class="btn btn-group btn-rand">Get Another Random Quote</button>
