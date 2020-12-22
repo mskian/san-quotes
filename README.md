@@ -1,5 +1,7 @@
 # San Quotes
 
+This Site was Moved to - [Vue Random Quotes](https://github.com/mskian/vue-random-quotes)
+
 My Favourite and Latest Collections of Quotes and Sayings - Santhosh Veer
 
 ## Server INFO
